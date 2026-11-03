@@ -68,7 +68,8 @@
   .clock h3 { color: var(--brand-ink); margin-bottom: 18px; }
   .step { display: grid; grid-template-columns: 74px 1fr; gap: 14px; padding: 14px 0; border-top: 1px solid rgba(244,239,230,.18); }
   .step:first-of-type { border-top: 0; }
-  .step b { font-family: Fraunces, Georgia, serif; font-size: 1.7rem; line-height: 1; color: #e7b877; }
+  .step b { font-family: Fraunces, Georgia, serif; font-size: 1.7rem; line-height: 1; color: #e7b877; white-space: nowrap; }
+  .step b.day { font-size: 1.25rem; padding-top: .25em; }
   .step small { display: block; opacity: .85; font-size: .92rem; }
 
   section { padding: 64px 0; }
@@ -142,7 +143,7 @@
       </div>
       <aside class="clock" aria-label="The 1031 timeline">
         <h3>The clock that matters</h3>
-        <div class="step"><b>Day 0</b><div>Your sale closes<small>Proceeds go to a qualified intermediary, not to you.</small></div></div>
+        <div class="step"><b class="day">Day 0</b><div>Your sale closes<small>Proceeds go to a qualified intermediary, not to you.</small></div></div>
         <div class="step"><b>45</b><div>Identify replacement property<small>In writing, calendar days, weekends and holidays included.</small></div></div>
         <div class="step"><b>180</b><div>Close on the replacement<small>Or your tax return due date, if that comes first.</small></div></div>
       </aside>
