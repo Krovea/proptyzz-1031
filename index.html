@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1031 Exchange Guide for Property Owners | Proptyzz</title>
+<meta name="description" content="Selling an investment property? A plain-English guide to the 1031 exchange: the 45-day and 180-day deadlines, what counts as like-kind, and options that don't mean managing another property.">
+<link rel="canonical" href="https://1031.proptyzz.com/">
+<meta property="og:title" content="1031 Exchange Guide for Property Owners">
+<meta property="og:description" content="The 45-day and 180-day deadlines, what counts as like-kind, and options that don't mean managing another property.">
+<meta property="og:url" content="https://1031.proptyzz.com/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23173f35'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='17' fill='%23f4efe6' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1c2420;
+    --muted: #5b655f;
+    --paper: #fbf8f2;
+    --panel: #f3ede2;
+    --line: #e2d9c9;
+    --brand: #173f35;
+    --brand-ink: #f4efe6;
+    --accent: #b8742a;
+    --radius: 14px;
+    --max: 1080px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 17px/1.65 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: Fraunces, Georgia, serif; font-weight: 600; line-height: 1.2; margin: 0 0 .5em; letter-spacing: -0.01em; }
+  h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); }
+  h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); }
+  h3 { font-size: 1.2rem; }
+  p { margin: 0 0 1em; }
+  a { color: var(--brand); }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+  header.top { border-bottom: 1px solid var(--line); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .logo { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.35rem; color: var(--brand); text-decoration: none; letter-spacing: -0.01em; }
+  .logo span { color: var(--accent); }
+
+  .btn {
+    display: inline-block; background: var(--brand); color: var(--brand-ink);
+    padding: 14px 24px; border-radius: 999px; text-decoration: none; font-weight: 600;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(23,63,53,.22); }
+  .btn.small { padding: 9px 18px; font-size: .95rem; }
+  .btn.ghost { background: transparent; color: var(--brand); border: 1.5px solid var(--brand); }
+
+  .hero { padding: 76px 0 64px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.25fr 1fr; gap: 56px; align-items: center; }
+  .eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; font-weight: 600; color: var(--accent); margin-bottom: 14px; }
+  .lead { font-size: 1.15rem; color: var(--muted); max-width: 34em; }
+  .hero .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+
+  .clock { background: var(--brand); color: var(--brand-ink); border-radius: var(--radius); padding: 30px; }
+  .clock h3 { color: var(--brand-ink); margin-bottom: 18px; }
+  .step { display: grid; grid-template-columns: 74px 1fr; gap: 14px; padding: 14px 0; border-top: 1px solid rgba(244,239,230,.18); }
+  .step:first-of-type { border-top: 0; }
+  .step b { font-family: Fraunces, Georgia, serif; font-size: 1.7rem; line-height: 1; color: #e7b877; }
+  .step small { display: block; opacity: .85; font-size: .92rem; }
+
+  section { padding: 64px 0; }
+  section.alt { background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .intro { max-width: 46em; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 30px; }
+  .card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+  section:not(.alt) .card { background: #fff; }
+  .card p { color: var(--muted); margin: 0; font-size: .98rem; }
+  .num { display: inline-block; width: 30px; height: 30px; border-radius: 50%; background: var(--brand); color: var(--brand-ink); text-align: center; line-height: 30px; font-weight: 600; font-size: .9rem; margin-bottom: 12px; }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 30px; }
+  .two .card h3 { margin-bottom: 8px; }
+  ul.ticks { list-style: none; padding: 0; margin: 12px 0 0; }
+  ul.ticks li { padding-left: 26px; position: relative; margin: 8px 0; color: var(--muted); font-size: .98rem; }
+  ul.ticks li::before { content: ""; position: absolute; left: 4px; top: .62em; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); }
+
+  details { border-bottom: 1px solid var(--line); padding: 18px 0; }
+  details:first-of-type { border-top: 1px solid var(--line); }
+  summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; font-size: 1.4rem; line-height: 1; color: var(--accent); }
+  details[open] summary::after { content: "–"; }
+  details p { color: var(--muted); margin: 12px 0 0; }
+  .faq { max-width: 46em; margin-top: 26px; }
+
+  .cta { text-align: center; }
+  .cta .box { background: var(--brand); color: var(--brand-ink); border-radius: 20px; padding: 56px 28px; }
+  .cta h2 { color: var(--brand-ink); }
+  .cta p { max-width: 36em; margin: 0 auto 26px; opacity: .9; }
+  .cta .btn { background: var(--brand-ink); color: var(--brand); }
+
+  footer { padding: 36px 0 48px; font-size: .85rem; color: var(--muted); }
+  footer p { max-width: 60em; }
+
+  @media (max-width: 860px) {
+    .hero { padding: 48px 0 40px; }
+    .hero .wrap, .two { grid-template-columns: 1fr; gap: 32px; }
+    .grid3 { grid-template-columns: 1fr; }
+    section { padding: 48px 0; }
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    .wrap { padding: 0 16px; }
+    header.top .btn { display: none; }
+    .clock { padding: 22px; }
+    .step { grid-template-columns: 62px 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="/">Propty<span>zz</span></a>
+    <a class="btn small" href="https://calendar.app.google/AQ9qt37vLyVrJJGy9">Book a call</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">For owners selling investment property</div>
+        <h1>Selling a property you've held for years? Know your 1031 options first.</h1>
+        <p class="lead">A 1031 exchange can let you defer capital gains tax when you sell investment real estate and buy more. The rules are strict and the clock starts at closing, so the time to understand them is before you sell.</p>
+        <div class="actions">
+          <a class="btn" href="https://calendar.app.google/AQ9qt37vLyVrJJGy9">Book a 30-minute intro call</a>
+          <a class="btn ghost" href="#how">How it works</a>
+        </div>
+      </div>
+      <aside class="clock" aria-label="The 1031 timeline">
+        <h3>The clock that matters</h3>
+        <div class="step"><b>Day 0</b><div>Your sale closes<small>Proceeds go to a qualified intermediary, not to you.</small></div></div>
+        <div class="step"><b>45</b><div>Identify replacement property<small>In writing, calendar days, weekends and holidays included.</small></div></div>
+        <div class="step"><b>180</b><div>Close on the replacement<small>Or your tax return due date, if that comes first.</small></div></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="alt" id="how">
+    <div class="wrap">
+      <div class="intro">
+        <h2>How a 1031 exchange works</h2>
+        <p>Section 1031 of the tax code lets you sell business or investment real estate and reinvest the proceeds in other "like-kind" real estate without paying capital gains tax on the sale at that time. The tax is deferred, not forgiven.</p>
+      </div>
+      <div class="grid3">
+        <div class="card"><div class="num">1</div><h3>Plan before you list</h3><p>The exchange has to be set up before the sale closes. Once you take the money yourself, it is too late.</p></div>
+        <div class="card"><div class="num">2</div><h3>Use a qualified intermediary</h3><p>A neutral third party holds the sale proceeds and buys the replacement property for you, as the rules require.</p></div>
+        <div class="card"><div class="num">3</div><h3>Meet both deadlines</h3><p>45 days to identify, 180 days to close. Missing either one generally means the gain becomes taxable.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="intro">
+        <h2>You don't have to become a landlord again</h2>
+        <p>Many owners who have managed property for decades want to defer the tax but are done with tenants, repairs and late-night calls. Replacement property doesn't have to be another building you run yourself.</p>
+      </div>
+      <div class="two">
+        <div class="card">
+          <h3>Owning and managing directly</h3>
+          <ul class="ticks">
+            <li>Full control over the property you buy</li>
+            <li>You handle tenants, upkeep and financing</li>
+            <li>Finding a suitable property inside 45 days can be hard</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Passive ownership options</h3>
+          <ul class="ticks">
+            <li>Some structures qualify as like-kind but are run by a professional sponsor</li>
+            <li>No day-to-day management on your side</li>
+            <li>They carry their own risks and suit some owners, not all; a licensed representative can explain the details</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Common questions</h2>
+      <div class="faq">
+        <details>
+          <summary>What counts as "like-kind" property?</summary>
+          <p>For real estate, it is broad: most real property held for investment or business use can be exchanged for other real property held the same way. A rental house can go into an apartment building, land, or commercial property. Your home and property held mainly to resell don't qualify.</p>
+        </details>
+        <details>
+          <summary>Do I have to reinvest all of the money?</summary>
+          <p>To defer all of the gain, you generally need to reinvest all of the net proceeds and replace any debt that was paid off. Cash you keep, often called "boot", is usually taxable.</p>
+        </details>
+        <details>
+          <summary>What happens if I miss the 45-day deadline?</summary>
+          <p>The deadlines are not extended for weekends or holidays, and generally can't be extended at all. If you don't identify replacement property in time, the exchange usually fails and the gain becomes taxable in the year of the sale.</p>
+        </details>
+        <details>
+          <summary>Is it too late if my property is already listed?</summary>
+          <p>No. What matters is setting up the exchange with a qualified intermediary before the sale closes. If you're under contract, it's worth talking it through soon.</p>
+        </details>
+        <details>
+          <summary>What happens on the call?</summary>
+          <p>A relaxed 30-minute conversation about your property and your plans. We go over how the timeline would work for you and which questions to bring to your CPA or attorney, and if it makes sense, we introduce you to a licensed representative. Nothing to prepare and no obligation.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <div class="box">
+        <h2>Talk it through before you sell</h2>
+        <p>Pick a 30-minute slot that suits you. We'll cover the deadlines, your options, and what to ask your tax advisor.</p>
+        <a class="btn" href="https://calendar.app.google/AQ9qt37vLyVrJJGy9">Choose a time</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>This page is general education about Section 1031 exchanges, not tax, legal or investment advice, and not an offer to buy or sell any security. Tax outcomes depend on your situation; please speak with your own CPA or attorney before making decisions. Any discussion of specific investments happens only with a licensed representative.</p>
+    <p>&copy; <span id="y">2026</span> Proptyzz</p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
