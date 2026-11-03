@@ -3,120 +3,147 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1031 Exchange Guide for Property Owners | Proptyzz</title>
-<meta name="description" content="Selling an investment property? A plain-English guide to the 1031 exchange: the 45-day and 180-day deadlines, what counts as like-kind, and options that don't mean managing another property.">
+<title>Selling Investment Property? Know Your 1031 Options | 1031 Proptyzz</title>
+<meta name="description" content="Selling an investment property? Get a short call on the 1031 exchange: the 45-day and 180-day deadlines, debt replacement, and options that don't mean managing another property.">
 <link rel="canonical" href="https://1031.proptyzz.com/">
-<meta property="og:title" content="1031 Exchange Guide for Property Owners">
-<meta property="og:description" content="The 45-day and 180-day deadlines, what counts as like-kind, and options that don't mean managing another property.">
+<meta property="og:title" content="Selling investment property? Know your 1031 options first.">
+<meta property="og:description" content="The 45-day and 180-day deadlines, debt replacement, and options that don't mean managing another property.">
 <meta property="og:url" content="https://1031.proptyzz.com/">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23173f35'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='17' fill='%23f4efe6' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="logo-mark.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #1c2420;
-    --muted: #5b655f;
-    --paper: #fbf8f2;
-    --panel: #f3ede2;
-    --line: #e2d9c9;
-    --brand: #173f35;
-    --brand-ink: #f4efe6;
-    --accent: #b8742a;
+    --cream: #faf8f3;
+    --cream-2: #f3efe5;
+    --ink: #1c2126;
+    --muted: #5d646b;
+    --line: #e6e0d3;
+    --green: #15715a;
+    --green-dark: #0f5a47;
+    --gold: #d4a95c;
+    --white: #ffffff;
     --radius: 14px;
-    --max: 1080px;
+    --max: 1160px;
+    --shadow: 0 24px 60px rgba(16, 24, 32, .28), 0 2px 8px rgba(16, 24, 32, .12);
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
     margin: 0;
-    background: var(--paper);
+    background: var(--cream);
     color: var(--ink);
-    font: 400 17px/1.65 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font: 400 16px/1.65 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-  h1, h2, h3 { font-family: Fraunces, Georgia, serif; font-weight: 600; line-height: 1.2; margin: 0 0 .5em; letter-spacing: -0.01em; }
-  h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); }
-  h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); }
-  h3 { font-size: 1.2rem; }
+  h1, h2, h3 { font-family: Newsreader, Georgia, serif; font-weight: 600; line-height: 1.15; margin: 0 0 .5em; }
   p { margin: 0 0 1em; }
-  a { color: var(--brand); }
-  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+  a { color: var(--green); }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
 
-  header.top { border-bottom: 1px solid var(--line); }
-  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
-  .logo { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.35rem; color: var(--brand); text-decoration: none; letter-spacing: -0.01em; }
-  .logo span { color: var(--accent); }
+  /* Header */
+  .top { background: rgba(250, 249, 244, .94); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; backdrop-filter: blur(6px); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .top .logo svg { height: 40px; width: auto; display: block; }
+  .pill { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); background: var(--white); border-radius: 999px; padding: 9px 18px; font-weight: 600; font-size: .92rem; color: var(--ink); text-decoration: none; }
+  .pill:hover { border-color: var(--green); color: var(--green); }
 
-  .btn {
-    display: inline-block; background: var(--brand); color: var(--brand-ink);
-    padding: 14px 24px; border-radius: 999px; text-decoration: none; font-weight: 600;
-    transition: transform .15s ease, box-shadow .15s ease;
+  /* Hero */
+  .hero {
+    position: relative; color: var(--white); overflow: hidden;
+    background:
+      linear-gradient(100deg, rgba(14, 19, 24, .94) 0%, rgba(14, 19, 24, .82) 45%, rgba(14, 19, 24, .55) 100%),
+      radial-gradient(1200px 500px at 85% 30%, #2d4a43 0%, transparent 70%),
+      linear-gradient(180deg, #24343a 0%, #141b20 100%);
   }
-  .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(23,63,53,.22); }
-  .btn.small { padding: 9px 18px; font-size: .95rem; }
-  .btn.ghost { background: transparent; color: var(--brand); border: 1.5px solid var(--brand); }
+  .hero .skyline { position: absolute; inset: auto 0 0 0; width: 100%; height: 62%; opacity: .5; pointer-events: none; }
+  .hero .wrap { position: relative; display: grid; grid-template-columns: 1.08fr .92fr; gap: 56px; align-items: start; padding-top: 72px; padding-bottom: 84px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 600; color: var(--gold); margin-bottom: 16px; }
+  .hero h1 { font-size: clamp(2.3rem, 4.6vw, 3.5rem); color: var(--white); margin-bottom: 22px; }
+  .hero .lead { font-size: 1.12rem; color: rgba(255, 255, 255, .86); max-width: 33em; margin-bottom: 34px; }
+  .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 40px; max-width: 32em; }
+  .facts b { display: block; font-family: Newsreader, Georgia, serif; font-size: 1.15rem; font-weight: 600; color: var(--gold); }
+  .facts span { font-size: .9rem; color: rgba(255, 255, 255, .78); }
 
-  .hero { padding: 76px 0 64px; }
-  .hero .wrap { display: grid; grid-template-columns: 1.25fr 1fr; gap: 56px; align-items: center; }
-  .eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; font-weight: 600; color: var(--accent); margin-bottom: 14px; }
-  .lead { font-size: 1.15rem; color: var(--muted); max-width: 34em; }
-  .hero .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+  /* Form card */
+  .form-col { position: relative; }
+  .badge { display: inline-flex; align-items: center; gap: 8px; background: var(--green); color: var(--white); border-radius: 999px; padding: 6px 14px; font-size: .74rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 14px 6px; }
+  .card { background: var(--white); color: var(--ink); border-radius: 16px; padding: 30px; box-shadow: var(--shadow); }
+  .card h2 { font-size: 1.45rem; margin-bottom: 6px; }
+  .card .sub { color: var(--muted); font-size: .94rem; margin-bottom: 20px; }
+  .field { margin-bottom: 12px; }
+  .field label { display: block; font-size: .8rem; font-weight: 600; color: var(--muted); margin-bottom: 5px; }
+  .card input[type=text], .card input[type=email], .card input[type=tel], .card select {
+    width: 100%; font: inherit; font-size: .95rem; color: var(--ink); background: var(--white);
+    border: 1px solid #d9d4c8; border-radius: 9px; padding: 12px 14px; outline: none; appearance: none;
+  }
+  .card select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%235d646b' stroke-width='1.6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+  .card input:focus, .card select:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(21, 113, 90, .15); }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .consent { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; font-size: .76rem; line-height: 1.5; color: var(--muted); margin: 6px 0 18px; }
+  .consent input { width: 17px; height: 17px; margin: 2px 0 0; accent-color: var(--green); }
+  .btn { display: block; width: 100%; border: 0; cursor: pointer; background: var(--green); color: var(--white); font: 600 1rem Inter, system-ui, sans-serif; padding: 15px 20px; border-radius: 10px; text-align: center; text-decoration: none; transition: background .15s ease; }
+  .btn:hover { background: var(--green-dark); }
+  .btn[disabled] { opacity: .7; cursor: wait; }
+  .private { text-align: center; font-size: .8rem; color: var(--muted); margin: 12px 0 0; }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .error { display: none; background: #fdf0ee; color: #8a2a1c; border-radius: 9px; padding: 10px 12px; font-size: .88rem; margin-bottom: 12px; }
+  .thanks { display: none; text-align: center; padding: 10px 0; }
+  .thanks .tick { width: 54px; height: 54px; border-radius: 50%; background: rgba(21, 113, 90, .12); color: var(--green); display: grid; place-items: center; margin: 0 auto 14px; font-size: 1.6rem; }
+  .thanks p { color: var(--muted); }
 
-  .clock { background: var(--brand); color: var(--brand-ink); border-radius: var(--radius); padding: 30px; }
-  .clock h3 { color: var(--brand-ink); margin-bottom: 18px; }
-  .step { display: grid; grid-template-columns: 74px 1fr; gap: 14px; padding: 14px 0; border-top: 1px solid rgba(244,239,230,.18); }
-  .step:first-of-type { border-top: 0; }
-  .step b { font-family: Fraunces, Georgia, serif; font-size: 1.7rem; line-height: 1; color: #e7b877; white-space: nowrap; }
-  .step b.day { font-size: 1.25rem; padding-top: .25em; }
-  .step small { display: block; opacity: .85; font-size: .92rem; }
+  /* Sections */
+  section.block { padding: 84px 0; }
+  section.alt { background: var(--cream-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .head { max-width: 44em; margin-bottom: 36px; }
+  .head h2 { font-size: clamp(1.8rem, 3.2vw, 2.4rem); }
+  .head p { color: var(--muted); font-size: 1.05rem; }
+  .cards3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .tile { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; box-shadow: 0 1px 2px rgba(16, 24, 32, .04); }
+  .tile .n { font-family: Newsreader, Georgia, serif; color: var(--green); font-weight: 600; font-size: 1rem; margin-bottom: 10px; }
+  .tile h3 { font-size: 1.2rem; margin-bottom: 8px; }
+  .tile p { color: var(--muted); font-size: .95rem; margin: 0; }
+  .checks { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .check { display: grid; grid-template-columns: 36px 1fr; gap: 16px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+  .check .ic { width: 36px; height: 36px; border-radius: 50%; background: rgba(21, 113, 90, .1); color: var(--green); display: grid; place-items: center; font-weight: 700; }
+  .check h3 { font-size: 1.15rem; margin-bottom: 6px; }
+  .check p { color: var(--muted); font-size: .95rem; margin: 0; }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; counter-reset: s; }
+  .steps .tile .n { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--green); color: var(--white); font-family: Inter, sans-serif; font-size: .9rem; }
 
-  section { padding: 64px 0; }
-  section.alt { background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .intro { max-width: 46em; }
-  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 30px; }
-  .card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
-  section:not(.alt) .card { background: #fff; }
-  .card p { color: var(--muted); margin: 0; font-size: .98rem; }
-  .num { display: inline-block; width: 30px; height: 30px; border-radius: 50%; background: var(--brand); color: var(--brand-ink); text-align: center; line-height: 30px; font-weight: 600; font-size: .9rem; margin-bottom: 12px; }
-
-  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 30px; }
-  .two .card h3 { margin-bottom: 8px; }
-  ul.ticks { list-style: none; padding: 0; margin: 12px 0 0; }
-  ul.ticks li { padding-left: 26px; position: relative; margin: 8px 0; color: var(--muted); font-size: .98rem; }
-  ul.ticks li::before { content: ""; position: absolute; left: 4px; top: .62em; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); }
-
-  details { border-bottom: 1px solid var(--line); padding: 18px 0; }
-  details:first-of-type { border-top: 1px solid var(--line); }
+  details { background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px; margin-bottom: 12px; }
   summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
   summary::-webkit-details-marker { display: none; }
-  summary::after { content: "+"; font-size: 1.4rem; line-height: 1; color: var(--accent); }
-  details[open] summary::after { content: "–"; }
+  summary::after { content: "+"; font-size: 1.35rem; line-height: 1; color: var(--green); }
+  details[open] summary::after { content: "\2212"; }
   details p { color: var(--muted); margin: 12px 0 0; }
-  .faq { max-width: 46em; margin-top: 26px; }
+  .faq { max-width: 50em; }
 
-  .cta { text-align: center; }
-  .cta .box { background: var(--brand); color: var(--brand-ink); border-radius: 20px; padding: 56px 28px; }
-  .cta h2 { color: var(--brand-ink); }
-  .cta p { max-width: 36em; margin: 0 auto 26px; opacity: .9; }
-  .cta .btn { background: var(--brand-ink); color: var(--brand); }
+  .final { text-align: center; padding: 84px 0; }
+  .final .box { background: linear-gradient(135deg, #18332c 0%, #0f1a17 100%); color: var(--white); border-radius: 20px; padding: 60px 28px; }
+  .final h2 { color: var(--white); font-size: clamp(1.8rem, 3.2vw, 2.4rem); }
+  .final p { color: rgba(255, 255, 255, .82); max-width: 34em; margin: 0 auto 28px; }
+  .final .btn { display: inline-block; width: auto; padding: 15px 30px; }
 
-  footer { padding: 36px 0 48px; font-size: .85rem; color: var(--muted); }
-  footer p { max-width: 60em; }
+  footer { border-top: 1px solid var(--line); padding: 36px 0 52px; font-size: .82rem; color: var(--muted); }
+  footer .logo svg { height: 30px; width: auto; display: block; margin-bottom: 14px; }
+  footer p { max-width: 62em; }
 
-  @media (max-width: 860px) {
-    .hero { padding: 48px 0 40px; }
-    .hero .wrap, .two { grid-template-columns: 1fr; gap: 32px; }
-    .grid3 { grid-template-columns: 1fr; }
-    section { padding: 48px 0; }
+  @media (max-width: 920px) {
+    .hero .wrap { grid-template-columns: 1fr; gap: 40px; padding-top: 48px; padding-bottom: 56px; }
+    .cards3, .steps, .checks { grid-template-columns: 1fr; }
+    section.block, .final { padding: 60px 0; }
   }
-  @media (max-width: 480px) {
-    body { font-size: 16px; }
+  @media (max-width: 520px) {
     .wrap { padding: 0 16px; }
-    header.top .btn { display: none; }
-    .clock { padding: 22px; }
-    .step { grid-template-columns: 62px 1fr; }
+    .top .wrap { height: 64px; }
+    .top .logo svg { height: 34px; }
+    .pill { padding: 8px 14px; font-size: .85rem; }
+    .facts { grid-template-columns: 1fr 1fr; gap: 16px 20px; }
+    .card { padding: 22px; }
+    .pair { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -124,107 +151,194 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="/">Propty<span>zz</span></a>
-    <a class="btn small" href="https://calendar.app.google/AQ9qt37vLyVrJJGy9">Book a call</a>
+    <a class="logo" href="/" aria-label="1031 Proptyzz home">
+      <svg viewBox="0 0 236 48" role="img" aria-hidden="true"><use href="#logo"/></svg>
+    </a>
+    <a class="pill" href="https://calendar.app.google/AQ9qt37vLyVrJJGy9">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+      Book a call
+    </a>
   </div>
 </header>
 
+<!-- The logo, drawn once and reused in the header and footer -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 236 48">
+    <rect x="0" y="2" width="44" height="44" rx="11" fill="#15715a"/>
+    <rect x="10" y="17" width="10" height="17" rx="1.5" fill="#faf8f3"/>
+    <rect x="23" y="11" width="11" height="23" rx="1.5" fill="#d4a95c"/>
+    <g fill="#15715a">
+      <rect x="12.5" y="20" width="2" height="2"/><rect x="15.5" y="20" width="2" height="2"/>
+      <rect x="12.5" y="25" width="2" height="2"/><rect x="15.5" y="25" width="2" height="2"/>
+      <rect x="25.5" y="14" width="2" height="2"/><rect x="29.5" y="14" width="2" height="2"/>
+      <rect x="25.5" y="19" width="2" height="2"/><rect x="29.5" y="19" width="2" height="2"/>
+      <rect x="25.5" y="24" width="2" height="2"/><rect x="29.5" y="24" width="2" height="2"/>
+    </g>
+    <path d="M9 38.5h24.5" stroke="#faf8f3" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M30.5 35.5l3.5 3-3.5 3" fill="none" stroke="#faf8f3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="54" y="33" font-family="Newsreader, Georgia, serif" font-size="25" font-weight="600" fill="#15715a">1031</text>
+    <text x="112" y="33" font-family="Newsreader, Georgia, serif" font-size="25" font-weight="600" fill="#1c2126">Proptyzz</text>
+  </symbol>
+</svg>
+
 <main>
   <section class="hero">
+    <svg class="skyline" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <g fill="#0b1013">
+        <rect x="620" y="170" width="120" height="230"/><rect x="750" y="110" width="90" height="290"/>
+        <rect x="850" y="200" width="140" height="200"/><rect x="1000" y="140" width="110" height="260"/>
+        <rect x="1120" y="230" width="150" height="170"/><rect x="1280" y="180" width="160" height="220"/>
+      </g>
+      <g fill="#d4a95c" opacity=".35">
+        <rect x="770" y="140" width="10" height="14"/><rect x="800" y="140" width="10" height="14"/><rect x="770" y="180" width="10" height="14"/>
+        <rect x="1020" y="170" width="10" height="14"/><rect x="1050" y="210" width="10" height="14"/><rect x="1080" y="170" width="10" height="14"/>
+        <rect x="1300" y="210" width="10" height="14"/><rect x="1340" y="250" width="10" height="14"/><rect x="880" y="230" width="10" height="14"/>
+      </g>
+    </svg>
     <div class="wrap">
       <div>
         <div class="eyebrow">For owners selling investment property</div>
-        <h1>Selling a property you've held for years? Know your 1031 options first.</h1>
-        <p class="lead">A 1031 exchange can let you defer capital gains tax when you sell investment real estate and buy more. The rules are strict and the clock starts at closing, so the time to understand them is before you sell.</p>
-        <div class="actions">
-          <a class="btn" href="https://calendar.app.google/AQ9qt37vLyVrJJGy9">Book a 30-minute intro call</a>
-          <a class="btn ghost" href="#how">How it works</a>
+        <h1>Sell the property.<br>Keep the gain working.</h1>
+        <p class="lead">A 1031 exchange can defer the capital gains tax when you sell investment real estate and reinvest. The deadlines are strict and start the day you close, so the best time to understand your options is before you sell.</p>
+        <div class="facts">
+          <div><b>45 days</b><span>to identify replacement property</span></div>
+          <div><b>180 days</b><span>to close on it</span></div>
+          <div><b>No landlording</b><span>passive options exist</span></div>
+          <div><b>No obligation</b><span>a 30-minute conversation</span></div>
         </div>
       </div>
-      <aside class="clock" aria-label="The 1031 timeline">
-        <h3>The clock that matters</h3>
-        <div class="step"><b class="day">Day 0</b><div>Your sale closes<small>Proceeds go to a qualified intermediary, not to you.</small></div></div>
-        <div class="step"><b>45</b><div>Identify replacement property<small>In writing, calendar days, weekends and holidays included.</small></div></div>
-        <div class="step"><b>180</b><div>Close on the replacement<small>Or your tax return due date, if that comes first.</small></div></div>
-      </aside>
-    </div>
-  </section>
 
-  <section class="alt" id="how">
-    <div class="wrap">
-      <div class="intro">
-        <h2>How a 1031 exchange works</h2>
-        <p>Section 1031 of the tax code lets you sell business or investment real estate and reinvest the proceeds in other "like-kind" real estate without paying capital gains tax on the sale at that time. The tax is deferred, not forgiven.</p>
-      </div>
-      <div class="grid3">
-        <div class="card"><div class="num">1</div><h3>Plan before you list</h3><p>The exchange has to be set up before the sale closes. Once you take the money yourself, it is too late.</p></div>
-        <div class="card"><div class="num">2</div><h3>Use a qualified intermediary</h3><p>A neutral third party holds the sale proceeds and buys the replacement property for you, as the rules require.</p></div>
-        <div class="card"><div class="num">3</div><h3>Meet both deadlines</h3><p>45 days to identify, 180 days to close. Missing either one generally means the gain becomes taxable.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="intro">
-        <h2>You don't have to become a landlord again</h2>
-        <p>Many owners who have managed property for decades want to defer the tax but are done with tenants, repairs and late-night calls. Replacement property doesn't have to be another building you run yourself.</p>
-      </div>
-      <div class="two">
+      <div class="form-col" id="form">
+        <div class="badge">&#9201; The 45-day clock starts at closing</div>
         <div class="card">
-          <h3>Owning and managing directly</h3>
-          <ul class="ticks">
-            <li>Full control over the property you buy</li>
-            <li>You handle tenants, upkeep and financing</li>
-            <li>Finding a suitable property inside 45 days can be hard</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Passive ownership options</h3>
-          <ul class="ticks">
-            <li>Some structures qualify as like-kind but are run by a professional sponsor</li>
-            <li>No day-to-day management on your side</li>
-            <li>They carry their own risks and suit some owners, not all; a licensed representative can explain the details</li>
-          </ul>
+          <form id="lead-form" novalidate>
+            <h2>Get your 1031 options review</h2>
+            <p class="sub">Tell us roughly where you are and a specialist will walk you through the timeline, debt replacement and your choices. Free, no obligation.</p>
+            <div class="error" id="form-error" role="alert"></div>
+            <div class="field">
+              <label for="stage">Where are you in your sale?</label>
+              <select id="stage" name="sale_stage" required>
+                <option value="">Choose one</option>
+                <option>Just researching</option>
+                <option>Planning to sell</option>
+                <option>Listed / on the market</option>
+                <option>Under contract</option>
+                <option>Already sold</option>
+                <option>Inside my 45-day window</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="price">Estimated sale price</label>
+              <select id="price" name="sale_price" required>
+                <option value="">Choose one</option>
+                <option>Under $250K</option>
+                <option>$250K to $500K</option>
+                <option>$500K to $1M</option>
+                <option>$1M to $2.5M</option>
+                <option>$2.5M+</option>
+              </select>
+            </div>
+            <div class="pair">
+              <div class="field"><label for="first">First name</label><input id="first" name="first_name" type="text" autocomplete="given-name" required></div>
+              <div class="field"><label for="last">Last name</label><input id="last" name="last_name" type="text" autocomplete="family-name" required></div>
+            </div>
+            <div class="pair">
+              <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="hp" aria-hidden="true"><label>Company website<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+            <label class="consent">
+              <input type="checkbox" name="consent" required>
+              <span>By submitting, I agree that 1031 Proptyzz and its partners may contact me at the number and email provided, including by automated means and SMS, about 1031 exchange options. Consent is not a condition of any purchase. Msg &amp; data rates may apply. Reply STOP to opt out.</span>
+            </label>
+            <button class="btn" type="submit" id="submit">Get my options review &rarr;</button>
+            <p class="private">&#128274; Your information stays private.</p>
+          </form>
+          <div class="thanks" id="thanks" role="status">
+            <div class="tick">&#10003;</div>
+            <h2>Thanks, we have your details.</h2>
+            <p>A specialist will be in touch within one business day. Want to pick a time now?</p>
+            <a class="btn" href="https://calendar.app.google/AQ9qt37vLyVrJJGy9">Choose a 30-minute slot &rarr;</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="alt">
+  <section class="block">
     <div class="wrap">
-      <h2>Common questions</h2>
+      <div class="head">
+        <h2>Why owners get caught out</h2>
+        <p>Most 1031 problems come from timing, not from the rules themselves.</p>
+      </div>
+      <div class="cards3">
+        <div class="tile"><div class="n">01</div><h3>The clock starts at closing</h3><p>You have 45 calendar days to identify replacement property in writing, weekends and holidays included. Most owners start looking far too late.</p></div>
+        <div class="tile"><div class="n">02</div><h3>The money can't touch your hands</h3><p>Sale proceeds have to go to a qualified intermediary. If the exchange isn't set up before closing, it can't be fixed afterwards.</p></div>
+        <div class="tile"><div class="n">03</div><h3>Debt has to be replaced too</h3><p>If your property carried a mortgage, you generally need to replace that debt as well as reinvest the cash, or the shortfall is taxable.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt">
+    <div class="wrap">
+      <div class="head">
+        <h2>What we go over with you</h2>
+        <p>A plain-English conversation built around your sale, not a sales pitch.</p>
+      </div>
+      <div class="checks">
+        <div class="check"><div class="ic">&#10003;</div><div><h3>Your exact timeline</h3><p>Where your 45-day and 180-day dates would fall, and what has to happen before your closing.</p></div></div>
+        <div class="check"><div class="ic">&#10003;</div><div><h3>Debt replacement</h3><p>Roughly how much debt you'd need to replace, and which kinds of replacement property can cover it.</p></div></div>
+        <div class="check"><div class="ic">&#10003;</div><div><h3>Options beyond another rental</h3><p>Some replacement property is professionally managed, so you defer the tax without taking on tenants and repairs again.</p></div></div>
+        <div class="check"><div class="ic">&#10003;</div><div><h3>Questions for your advisers</h3><p>What to ask your CPA and attorney, so their time is spent on decisions rather than basics.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="head"><h2>How it works</h2></div>
+      <div class="steps">
+        <div class="tile"><div class="n">1</div><h3>Tell us where you are</h3><p>Two quick questions about your sale and how to reach you. Rough answers are fine.</p></div>
+        <div class="tile"><div class="n">2</div><h3>Talk it through</h3><p>A 30-minute call with a specialist about your timeline, debt and options.</p></div>
+        <div class="tile"><div class="n">3</div><h3>Decide with your advisers</h3><p>If it makes sense, we introduce you to a licensed representative. Nothing to buy, no obligation.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt">
+    <div class="wrap">
+      <div class="head"><h2>Common questions</h2></div>
       <div class="faq">
         <details>
           <summary>What counts as "like-kind" property?</summary>
-          <p>For real estate, it is broad: most real property held for investment or business use can be exchanged for other real property held the same way. A rental house can go into an apartment building, land, or commercial property. Your home and property held mainly to resell don't qualify.</p>
+          <p>For real estate it is broad: most property held for investment or business use can be exchanged for other real property held the same way. A rental house can go into an apartment building, land or commercial property. Your own home and property held mainly to resell don't qualify.</p>
         </details>
         <details>
           <summary>Do I have to reinvest all of the money?</summary>
-          <p>To defer all of the gain, you generally need to reinvest all of the net proceeds and replace any debt that was paid off. Cash you keep, often called "boot", is usually taxable.</p>
+          <p>To defer all of the gain you generally need to reinvest all of the net proceeds and replace any debt that was paid off. Cash you keep, often called "boot", is usually taxable.</p>
         </details>
         <details>
-          <summary>What happens if I miss the 45-day deadline?</summary>
-          <p>The deadlines are not extended for weekends or holidays, and generally can't be extended at all. If you don't identify replacement property in time, the exchange usually fails and the gain becomes taxable in the year of the sale.</p>
-        </details>
-        <details>
-          <summary>Is it too late if my property is already listed?</summary>
+          <summary>Is it too late if my property is already listed or under contract?</summary>
           <p>No. What matters is setting up the exchange with a qualified intermediary before the sale closes. If you're under contract, it's worth talking it through soon.</p>
         </details>
         <details>
-          <summary>What happens on the call?</summary>
-          <p>A relaxed 30-minute conversation about your property and your plans. We go over how the timeline would work for you and which questions to bring to your CPA or attorney, and if it makes sense, we introduce you to a licensed representative. Nothing to prepare and no obligation.</p>
+          <summary>What if I'm already inside my 45 days?</summary>
+          <p>Then the identification deadline is the priority. Some professionally managed options can be identified and closed quickly because the property is already acquired and financed. A short call helps you see what's realistic in the time left.</p>
+        </details>
+        <details>
+          <summary>What does the call cost?</summary>
+          <p>Nothing, and there's no obligation to go further. We don't give tax or legal advice; we help you understand the process and your choices so you can decide with your own advisers.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <section class="cta">
+  <section class="final">
     <div class="wrap">
       <div class="box">
-        <h2>Talk it through before you sell</h2>
-        <p>Pick a 30-minute slot that suits you. We'll cover the deadlines, your options, and what to ask your tax advisor.</p>
-        <a class="btn" href="https://calendar.app.google/AQ9qt37vLyVrJJGy9">Choose a time</a>
+        <h2>Know your options before you sell</h2>
+        <p>Two quick questions and your contact details. A specialist will walk you through your timeline and choices.</p>
+        <a class="btn" href="#form">Get my options review &rarr;</a>
       </div>
     </div>
   </section>
@@ -232,10 +346,63 @@
 
 <footer>
   <div class="wrap">
-    <p>This page is general education about Section 1031 exchanges, not tax, legal or investment advice, and not an offer to buy or sell any security. Tax outcomes depend on your situation; please speak with your own CPA or attorney before making decisions. Any discussion of specific investments happens only with a licensed representative.</p>
-    <p>&copy; <span id="y">2026</span> Proptyzz</p>
+    <div class="logo"><svg viewBox="0 0 236 48" role="img" aria-label="1031 Proptyzz"><use href="#logo"/></svg></div>
+    <p>This page is general education about Section 1031 exchanges. It is not tax, legal or investment advice and not an offer to buy or sell any security. Tax outcomes depend on your situation; speak with your own CPA or attorney before making decisions. Any discussion of specific investments happens only with a licensed representative, and only where appropriate for you.</p>
+    <p>&copy; <span id="year">2026</span> 1031 Proptyzz</p>
   </div>
 </footer>
-<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+
+<script>
+  // Leads go to the Outbound app's inbound webhook (Sources page, program 1).
+  var ENDPOINT = "";
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  var form = document.getElementById("lead-form");
+  var errorBox = document.getElementById("form-error");
+  var submit = document.getElementById("submit");
+
+  function showError(msg) {
+    errorBox.textContent = msg;
+    errorBox.style.display = "block";
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    errorBox.style.display = "none";
+    if (!form.checkValidity()) {
+      var bad = form.querySelector(":invalid");
+      showError(bad && bad.name === "consent" ? "Please tick the box to agree to be contacted." : "Please fill in every field.");
+      if (bad) bad.focus();
+      return;
+    }
+    var data = Object.fromEntries(new FormData(form).entries());
+    if (data.website) return; // bots fill the hidden field
+    delete data.website;
+    data.consent = "yes (" + new Date().toISOString() + ")";
+    data.source_page = location.href;
+    if (!ENDPOINT) {
+      showError("This form isn't connected yet. Please book a time with the button at the top of the page.");
+      return;
+    }
+    submit.disabled = true;
+    submit.textContent = "Sending...";
+    fetch(ENDPOINT, { method: "POST", headers: { "Content-Type": "text/plain" }, body: JSON.stringify(data) })
+      .then(function (r) { return r.json().catch(function () { return { ok: r.ok }; }); })
+      .then(function (res) {
+        if (res && res.ok) {
+          form.style.display = "none";
+          document.getElementById("thanks").style.display = "block";
+        } else {
+          throw new Error(res && res.error);
+        }
+      })
+      .catch(function () {
+        submit.disabled = false;
+        submit.innerHTML = "Get my options review &rarr;";
+        showError("Something went wrong sending your details. Please try again, or book a time with the button at the top.");
+      });
+  });
+</script>
 </body>
 </html>
